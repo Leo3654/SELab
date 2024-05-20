@@ -212,7 +212,7 @@ public class GUI extends JFrame {
 
     // 随机漫步方法
     private void randomWalk() {
-        String result = graphApp.randomWalk();  // 执行随机漫步
+        String result = graphApp.randomWalk();  // 执行随机漫步(B1)
         textArea.append(result + "\n");  // 显示结果到文本区域
     }
 
