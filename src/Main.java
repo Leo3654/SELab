@@ -21,8 +21,7 @@ public class Main {
                 // 去除非字母字符并转为小写，按空格分割单词
                 String[] words = line.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
                 for (String word : words) {
-                    if (word.isEmpty()) continue; // 跳过空字符串
-
+                    if (word.isEmpty()) continue; // 跳过空的单词
                     graph.putIfAbsent(word, new HashMap<>()); // 如果图中没有这个单词，添加
 
                     if (prevWord != null) {
