@@ -186,7 +186,7 @@ public class Main {
         Set<String> visitedEdges = new HashSet<>();
         String current = start;
 
-        // 随机选择边进行游走
+        // 随机选择邻居节点进行游走
         while (true) {
             Map<String, Integer> neighbors = graph.get(current);
             if (neighbors.isEmpty()) break;
